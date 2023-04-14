@@ -115,7 +115,7 @@ int main(void)
     recordSz = parseData("input.txt", &pRecords);
     printRecords(pRecords, recordSz);
 
-    int hashTableSize = 8; // assign it a value, for example, 100
+    int hashTableSize = 11; // assign it a value, for example, 100
     struct HashType *hashTable = (struct HashType *)calloc(hashTableSize, sizeof(struct HashType)); // initialize a hashTable with calloc
 
     for (int i = 0; i < recordSz; ++i)
